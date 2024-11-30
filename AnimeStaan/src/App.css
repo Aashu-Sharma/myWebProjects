@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-anime-gradient {
+  background: linear-gradient(to top, black, transparent, black), url('./assets/anime-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* Add to your App.css for the anime-themed background */
+/*  */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

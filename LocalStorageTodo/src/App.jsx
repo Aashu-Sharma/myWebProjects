@@ -23,7 +23,7 @@ function App() {
     setTodos((prev) => prev.map((prevTodo) => prevTodo.id === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo ))
   }
 
-  useEffect(() => {
+  useEffect(() => { 
     let todos = JSON.parse(localStorage.getItem("todos"))
 
     if(todos && todos.length > 0){
@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("todos",JSON.stringify(todos));
-  }, [todos])
+  }, [todos]) 
 
   return (
   <TodoContextProvider value = {{todos, addTodo, updateTodo, deleteTodo, toggleComplete}} >
