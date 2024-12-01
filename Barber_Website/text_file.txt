@@ -1,6 +1,0 @@
-Headers & Footers: Navy Blue
-Backgrounds: White or Light Gray
-Buttons & Links: Teal (with Orange for CTAs)
-Text: Dark Gray (primary text) and Navy Blue (headlines or important text)
-
-
