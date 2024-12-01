@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#1f0404, #730228);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.selector{
+    width: 400px;
+}
+
+.selectField{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 30px 0;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.selectField img{
+    width: 30px;
+}
+
+
+#list{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.options{
+    width: 100%;
+    padding: 20px 0 15px 60px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.options img{
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+.options:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.hide{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}

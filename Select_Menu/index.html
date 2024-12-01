@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Select Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="selector">
+            <div id="selectField">
+                <p id="selectText">Select Social Media App</p>
+                <img src="Icons/dropdown.png" id="arrow">
+            </div>
+            <ul id="list" class="hide">
+                <li class="options"><img src="Icons/facebook.jfif" alt=""><p>Facebook</p></li>
+                <li class="options"><img src="Icons/Instagram.jfif" alt=""><p>Instagram</p></li>
+                <li class="options"><img src="Icons/whatsapp.png" alt=""><p>Whatsapp</p></li>
+                <li class="options"><img src="Icons/Pinterest.png" alt=""><p>Pinterest</p></li>
+                <li class="options"><img src="Icons/x.jpg" alt=""><p>X</p></li>
+                <li class="options"><img src="Icons/yt.png" alt=""><p>Youtube</p></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let selectField = document.getElementById("selectField");
+        let selectText = document.getElementById("selectText");
+        let options = document.getElementsByClassName("options");
+        let list = document.getElementById("list");
+        let arrow = document.getElementById("arrow");
+        
+        for(option of options){
+            option.onclick = function(){
+                selectText.innerHTML = this.textContent;
+                list.classList.toggle("hide")
+            }
+        }
+
+        selectField.addEventListener("click",()=>{
+            list.classList.toggle("hide")
+            arrow.classList.toggle("rotate");
+        });
+    </script>
+</body>
+</html>
